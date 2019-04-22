@@ -8,7 +8,7 @@ UCOS_PORT_SRC=c:\software\ucos-II\ports\80x86\win32\vc\src
 UCOS_PORT_EX=.\
 
 ########## Name of Example source file ########################################
-EXAMPLE=test.c
+EXAMPLE=main.c
 
 all:	
 	@cl -nologo /MD /I$(UCOS_SRC) /I$(UCOS_PORT_SRC) /I$(UCOS_PORT_EX) $(EXAMPLE) $(UCOS_SRC)\ucos_ii.c $(UCOS_PORT_SRC)\pc.c $(UCOS_PORT_SRC)\os_cpu_c.c  winmm.lib user32.lib
